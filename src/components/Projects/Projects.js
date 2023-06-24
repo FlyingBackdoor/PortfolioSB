@@ -2,12 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import zestMoney from "../../Assets/Projects/zest.png";
+import angkas from "../../Assets/Projects/angkas.png";
+import projectGeneric from "../../Assets/Projects/project_generic.png";
+import hoothoot from "../../Assets/Projects/hoothoot.png";
+
 
 function Projects() {
   return (
@@ -15,7 +14,7 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My recent <strong className="purple">Works </strong> & <strong className="purple">Collaborations </strong>
         </h1>
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
@@ -23,70 +22,68 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={angkas}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Angkas"
+              description="Angkas is a motorcycle hailing platform that helps Filipinos
+              beat the traffic congested streets of the Philippines and save
+              precious time through ride-hailing, delivery or purchase."
+              ghLink=""
+              demoLink="https://angkas.com"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={projectGeneric}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="HDFC Bank - SLI"
+              description="While working for Kadel Labs, I got deployed on Novopay (aka Trustt) project where I had an opportunity to work on the HDFC bank lending application. The application is used by bank’s field officers to do a customers background check and provide her a loan and can be used for various other tasks."
+              demoLink="https://trustt.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={zestMoney}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="ZestMoney"
+              description="ZestMoney helps make it accessible for millions to upgrade, to enhance, to rise, while keeping it affordable. Shopping with ZestMoney gives you the freedom to buy right now and repay in either 30 days, or 3 or 4 months. You get to pick what works best for you. With a quick 3-step approval process, ZestMoney offers buy now in easy EMIs option at over 10,000 online & 85,000 offline stores."
+              // ghLink="https://github.com/soumyajit4419/Editor.io"
+              demoLink="https://play.google.com/store/apps/details?id=in.zestmoney.android.zestlife"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={projectGeneric}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Paqman"
+              description="First of its kind, a peer-to-peer parcel delivery services."
+              demoLink="https://paqman.one"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={hoothoot}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Hoothoot Deals"
+              description="HootHoot Deals provide you deals from every trusted e-commerce portal. Every deal is first verified by our team so you can get the best offer."
+              demoLink="https://hoothoot-deals.netlify.app"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={projectGeneric}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Freelance Projects"
+              description="During my career I’ve worked on many freelance projects as well. I’ve also helped dozens of clients with their code. You can find their testimonials in the following link."
+              demoLink="https://www.fiverr.com/m_sohair"
             />
           </Col>
+
         </Row>
       </Container>
     </Container>
