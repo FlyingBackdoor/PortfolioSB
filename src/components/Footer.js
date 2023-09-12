@@ -15,7 +15,7 @@ function Footer() {
           <a
           href="https://github.com/soumyajit4419/Portfolio"
           target="_blank">
-          <h3>Made by Soumyajit Behera </h3>
+          <h3>Template by Soumyajit Behera </h3>
           </a>
         </Col>
         <Col md="4" className="footer-copywright">
